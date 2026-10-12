@@ -7,6 +7,7 @@ import {
   ChevronDown,
   Menu,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -50,11 +51,10 @@ export default function Navbar() {
 
         {/* ================= NAVIGATION ================= */}
         <div className="nav-links">
-          <a href="#" className="active">
-            Home
-          </a>
+          <Link to="/" >Home</Link>
 
-          <a href="#">Product</a>
+
+          <Link to="/product">Product</Link>
 
           <a href="#">Deals</a>
 
