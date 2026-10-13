@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import {
-  Heart,
+  // Heart,
   ShoppingCart,
   Search,
   Handbag,
@@ -51,8 +51,7 @@ export default function Navbar() {
 
         {/* ================= NAVIGATION ================= */}
         <div className="nav-links">
-          <Link to="/" >Home</Link>
-
+          <Link to="/">Home</Link>
 
           <Link to="/product">Product</Link>
 
@@ -78,9 +77,9 @@ export default function Navbar() {
 
         {/* ================= ACTION ICONS ================= */}
         <div className="nav-actions">
-          <a href="#" className="nav-icon" aria-label="Wishlist">
+          {/* <a href="#" className="nav-icon" aria-label="Wishlist">
             <Heart size={27} />
-          </a>
+          </a> */}
 
           <a href="#" className="nav-icon cart-icon" aria-label="Cart">
             <ShoppingCart size={29} />
@@ -88,7 +87,29 @@ export default function Navbar() {
             <span className="cart-count">0</span>
           </a>
         </div>
-
+        <div className="dropdown account-dropdown">
+          <button
+            className="account-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="My Account"
+          >
+            <img
+              src="/icons/profile-icon.png"
+              alt="My Account"
+              className="profile-icon"
+            />
+          </button>
+          <ul className="dropdown-menu account-menu">
+            <li>
+              <a className="dropdown-item" href="/login">Login</a>
+            </li>
+            <li>
+              <a className="dropdown-item" href="/register">register</a>
+            </li>
+          </ul>
+        </div>
         {/* MOBILE MENU */}
         <button className="mobile-menu" aria-label="Open menu">
           <Menu size={28} />
