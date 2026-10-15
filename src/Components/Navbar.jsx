@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import {
-  // Heart,
+  Heart,
   ShoppingCart,
   Search,
   Handbag,
@@ -55,11 +55,11 @@ export default function Navbar() {
 
           <Link to="/product">Product</Link>
 
-          <a href="#">Deals</a>
+          <Link to="#">Trending</Link>
 
-          <a href="#">About Us</a>
+          <Link to="/About">About Us</Link>
 
-          <a href="#">Contact</a>
+          <Link to="/Contact">Contact</Link>
         </div>
 
         {/* ================= SEARCH ================= */}
@@ -77,9 +77,9 @@ export default function Navbar() {
 
         {/* ================= ACTION ICONS ================= */}
         <div className="nav-actions">
-          {/* <a href="#" className="nav-icon" aria-label="Wishlist">
+          <a href="#" className="nav-icon" aria-label="Wishlist">
             <Heart size={27} />
-          </a> */}
+          </a>
 
           <a href="#" className="nav-icon cart-icon" aria-label="Cart">
             <ShoppingCart size={29} />
@@ -103,10 +103,10 @@ export default function Navbar() {
           </button>
           <ul className="dropdown-menu account-menu">
             <li>
-              <a className="dropdown-item" href="/login">Login</a>
+              <Link className="dropdown-item" to="/login">Login</Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/register">register</a>
+              <Link className="dropdown-item" to="/register">register</Link>
             </li>
           </ul>
         </div>
