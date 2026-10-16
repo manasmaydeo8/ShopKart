@@ -1,0 +1,214 @@
+.site-footer {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #021827;
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+}
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-main {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 3%;
+  display: grid;
+  grid-template-columns:
+1.45fr
+    0.9fr
+    1fr
+    1fr
+    1.45fr;
+  column-gap: 35px;
+  align-items: start;
+}
+
+/* =========================
+   BRAND SECTION
+========================= */
+
+.footer-brand {
+  min-width: 0;
+  align-self: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: #f4f7fa;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.footer-logo span {
+  color: #0abf9e;
+}
+
+.footer-brand p {
+  margin: 11px 0 14px;
+  color: #e0e7ed;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-socials a {
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #536879;
+  border-radius: 50%;
+  color: #edf2f5;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: #0abf9e;
+  border-color: #0abf9e;
+  color: #021827;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-column h3,
+.footer-payments h3 {
+  margin: 0 0 7px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-column a {
+  width: fit-content;
+  color: #e0e7ed;
+  text-decoration: none;
+  font-size: 12.5px;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #0abf9e;
+}
+
+/* =========================
+   PAYMENT SECTION
+========================= */
+
+.footer-payments {
+  min-width: 0;
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 7px 0 20px;
+}
+
+/* Payment Image Box */
+
+.payment {
+  width: 57px;
+  height: 34px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Payment Images */
+
+.payment img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================
+   SECURE PAYMENT
+========================= */
+
+.secure-payment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dce5eb;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.lock-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.lock-icon img {
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  min-height: 17px;
+  max-width: 17px;
+  max-height: 17px;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================
+   BOTTOM BAR
+========================= */
+
+.footer-bottom {
+  width: 94%;
+  margin: 0 auto;
+  padding: 11px 0 12px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  color: #d6e0e6;
+  font-size: 12px;
+}
