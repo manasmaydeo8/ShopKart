@@ -158,7 +158,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="products">
+      <section className="products" id="trending">
         <div className="sec-heading">
           <div className="trend-heading ">
             <h2 className="title-trend">
@@ -199,7 +199,7 @@ function Home() {
                   <button className="buynow-btn">Buy Now</button>
 
                   <button className="cart-btn">
-                    <ShoppingCartPlus className="img"/>
+                    <ShoppingCartPlus className="img" />
                   </button>
                 </div>
               </div>

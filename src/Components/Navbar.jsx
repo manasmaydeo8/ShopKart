@@ -55,7 +55,7 @@ export default function Navbar() {
 
           <Link to="/product">Product</Link>
 
-          <Link to="#">Trending</Link>
+          <a href="#trending">Trending</a>
 
           <Link to="/About">About Us</Link>
 
